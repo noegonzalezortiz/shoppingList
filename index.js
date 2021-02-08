@@ -1,7 +1,7 @@
 $(function() {
     $('#js-shopping-list-form').submit(event => {
        event.preventDefault();
-       //$(".js-shopping-list-entry").empty();
+
        
        const item = $(this).find(
         'input[name="shopping-list-entry"]').val();
@@ -11,13 +11,10 @@ $(function() {
       
       $("ul").append(
         "<li>" +
-        //"<span class=\"shopping-item\">"+
         '<span class = "shopping-item">' +
         [item] +
         "</span>" +
-        //"<div class=\"shopping-item-controls\">"+
         '<div class = "shopping-item-controls">'+
-       // [buttonDiv] +
         '<button class="shopping-item-toggle">' +
         '<span class="button-label">check</span>' +
         '</button>' + 
